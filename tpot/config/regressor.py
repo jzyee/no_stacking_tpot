@@ -29,6 +29,11 @@ import numpy as np
 
 regressor_config_dict = {
 
+    'sklearn.linear_model.LinearRegression':{
+        'fit_intercept': [True, False],
+        'normalize': [True, False],
+    },
+
     'sklearn.linear_model.ElasticNetCV': {
         'l1_ratio': np.arange(0.0, 1.01, 0.05),
         'tol': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1]
