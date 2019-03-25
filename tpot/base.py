@@ -103,7 +103,7 @@ class TPOTBase(BaseEstimator):
                  scoring=None, cv=5, subsample=1.0, n_jobs=1,
                  max_time_mins=None, max_eval_time_mins=5,
                  random_state=None, config_dict=None, fixed_length=None,
-                 simple_pipeline=False, warm_start=False, memory=None,
+                 simple_pipeline=True, warm_start=False, memory=None,
                  periodic_checkpoint_folder=None, early_stop=None,
                  verbosity=0, disable_update_check=False):
         """Set up the genetic programming algorithm for pipeline optimization.
